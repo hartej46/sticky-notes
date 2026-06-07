@@ -1,0 +1,119 @@
+.note-interface {
+  width: 100vw;
+  height: 100vh;
+  position: relative; 
+  background-color: #f1f3f4; 
+  overflow: hidden; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sticky-notes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sticky-notes .note {
+  position: absolute; 
+}
+
+.add-new {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; 
+}
+
+.new-stickynote {
+  background-color: #FFF9D5;
+  width: 280px;
+  height: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.new-stickynote textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.addNote {
+  align-self: flex-end;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.addNote:hover {
+  background-color: #555;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px; 
+  width: 60px;
+  height: 60px;
+  background-color: #202124; 
+  color: white;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 300;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 50; 
+  transition: transform 0.2s, background-color 0.2s;
+  user-select: none; 
+}
+
+.add-button:hover {
+  transform: scale(1.08); 
+  background-color: #35363a;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+.delete-btn:hover {
+  color: #ff4757; 
+  transform: scale(1.15); 
+}
