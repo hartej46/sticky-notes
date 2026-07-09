@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useActionData } from "react-router-dom";
 import './StickyNotes.css'
 
 function StickyNotes({note,colors,onDelete,setColor}) {
